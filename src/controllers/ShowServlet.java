@@ -13,24 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 import models.Task;
 import utils.DBUtil;
 
-/**
- * Servlet implementation class ShowServlet
- */
 @WebServlet("/show")
 public class ShowServlet extends HttpServlet {
         private static final long serialVersionUID = 1L;
 
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
     public ShowServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
-        /**
-         * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-         */
         protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
             EntityManager em = DBUtil.createEntityManager();
 
